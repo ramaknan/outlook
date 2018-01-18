@@ -32,41 +32,8 @@ public class OutlookMailTest {
         WebDriverWait wdw=new WebDriverWait(driver,50);
         wdw.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='header']/img")));
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        driver.findElement(By.id("passwordInput")).sendKeys("Dec@2017");
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        driver.findElement(By.id("passwordInput")).sendKeys("******");
+
         driver.findElement(By.id("submitButton")).click();
         WebDriverWait wdw1=new WebDriverWait(driver,50);
         wdw1.until(ExpectedConditions.visibilityOfElementLocated(By.id("displayName")));
